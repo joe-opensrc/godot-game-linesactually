@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://bcbw5jwjp3ja3"]
+[gd_scene load_steps=2 format=3 uid="uid://bcbw5jwjp3ja3"]
 
-[ext_resource type="Script" path="res://firstAttempt/the_grid.gd" id="1_35nb1"]
 [ext_resource type="Script" path="res://secondAttempt/GridHarness.gd" id="1_t0swp"]
 
 [node name="Harness" type="CenterContainer"]
@@ -14,6 +13,5 @@ size_flags_vertical = 3
 script = ExtResource("1_t0swp")
 
 [node name="TheGrid" type="GridContainer" parent="."]
+unique_name_in_owner = true
 layout_mode = 2
-script = ExtResource("1_35nb1")
-gridSize = 2
