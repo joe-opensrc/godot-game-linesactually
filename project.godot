@@ -13,7 +13,6 @@ config_version=5
 config/name="MouseSnap"
 run/main_scene="res://secondAttempt/GridHarness.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
-config/icon="res://firstAttempt/icon.svg"
 
 [display]
 
