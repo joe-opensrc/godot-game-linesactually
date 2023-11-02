@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt61ngowmtxow"
-path="res://.godot/imported/icon.svg-bd2ae936f9089a35cf611228de336b9d.ctex"
+uid="uid://346146q3dw5a"
+path="res://.godot/imported/openbox.svg-da59b47cc26bacadaf477741c21c8e69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://secondAttempt/ABox/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-bd2ae936f9089a35cf611228de336b9d.ctex"]
+source_file="res://secondAttempt/ABox/openbox.svg"
+dest_files=["res://.godot/imported/openbox.svg-da59b47cc26bacadaf477741c21c8e69.ctex"]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
