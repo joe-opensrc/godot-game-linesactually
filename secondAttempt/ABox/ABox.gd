@@ -1,5 +1,7 @@
 extends TextureRect
 
-
 func _ready():
-  pass
+  $Button.add_to_group("Buttons")
+
+func _callButtonWatcher():
+  print("Eventuality")
