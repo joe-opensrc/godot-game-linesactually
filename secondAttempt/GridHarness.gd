@@ -10,5 +10,7 @@ func _ready():
   for i in range(gridSize * gridSize):
     print(i)
     var anotherBox = aBox.instantiate()
+    anotherBox.set_name("ABox" + str(i))
+    anotherBox.set_texture(openboxTex)
     %TheGrid.add_child(anotherBox)
     print_tree_pretty()
