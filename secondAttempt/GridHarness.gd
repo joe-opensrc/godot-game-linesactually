@@ -2,7 +2,7 @@ extends Control
 
 @export  var gridSize: int = 3
 
-var aBox: PackedScene = preload("res://secondAttempt/ABox/a_box.tscn")
+const aBox: PackedScene = preload("res://secondAttempt/ABox/a_box.tscn")
 @export var   openBoxTexture: CompressedTexture2D = preload("res://secondAttempt/ABox/openbox.svg")
 @export var closedBoxTexture: CompressedTexture2D = preload("res://secondAttempt/ABox/closedbox.svg")
 
