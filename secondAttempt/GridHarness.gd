@@ -9,7 +9,7 @@ var aBox: PackedScene = preload("res://secondAttempt/ABox/a_box.tscn")
 func _ready():
   %TheGrid.set_columns(gridSize)
   for i in range(gridSize * gridSize):
-#    print(i)
+
     var anotherBox = aBox.instantiate()
     anotherBox.set_name("ABox" + str(i))
     anotherBox.set_texture(openBoxTexture.duplicate(true))
