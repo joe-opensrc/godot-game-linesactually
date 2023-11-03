@@ -12,7 +12,7 @@ func _ready():
 
     var anotherBox = aBox.instantiate()
     anotherBox.set_name("ABox" + str(i))
-    anotherBox.set_texture(openBoxTexture.duplicate(true))
+    anotherBox.set_texture(openBoxTexture)
     anotherBox.get_node("Button").pressed.connect(_on_box_pressed.bind(i))
     %TheGrid.add_child(anotherBox)
 
