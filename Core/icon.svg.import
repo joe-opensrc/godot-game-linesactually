@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dt61ngowmtxow"
+path="res://.godot/imported/icon.svg-4c96a4ecff1869f7b29ee9eabf1249d7.image"
+
+[deps]
+
+source_file="res://Core/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-4c96a4ecff1869f7b29ee9eabf1249d7.image"]
+
+[params]
+

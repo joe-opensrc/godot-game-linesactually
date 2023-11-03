@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="LinesActually"
-run/main_scene="res://secondAttempt/GridHarness.tscn"
+run/main_scene="res://Core/GridHarness.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 
 [display]

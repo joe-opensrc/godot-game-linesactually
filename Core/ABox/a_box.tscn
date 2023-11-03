@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d1m2tykw03is0"]
 
-[ext_resource type="Script" path="res://secondAttempt/ABox/ABox.gd" id="1_x7syx"]
+[ext_resource type="Script" path="res://Core/ABox/ABox.gd" id="1_uouud"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_uxfdh"]
 
@@ -11,7 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("ImageTexture_uxfdh")
-script = ExtResource("1_x7syx")
+script = ExtResource("1_uouud")
 
 [node name="Button" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.419608)

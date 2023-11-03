@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bcbw5jwjp3ja3"]
 
-[ext_resource type="Script" path="res://secondAttempt/GridHarness.gd" id="1_t0swp"]
+[ext_resource type="Script" path="res://Core/GridHarness.gd" id="1_kn42i"]
 
 [node name="Harness" type="CenterContainer"]
 anchors_preset = 15
@@ -10,7 +10,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("1_t0swp")
+script = ExtResource("1_kn42i")
 
 [node name="TheGrid" type="GridContainer" parent="."]
 unique_name_in_owner = true

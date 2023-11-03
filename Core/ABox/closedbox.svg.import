@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://346146q3dw5a"
-path="res://.godot/imported/openbox.svg-da59b47cc26bacadaf477741c21c8e69.ctex"
+uid="uid://bmoyno57kxlag"
+path="res://.godot/imported/closedbox.svg-b0efb6d423564bcbb2fb8571a9e8f561.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://secondAttempt/ABox/openbox.svg"
-dest_files=["res://.godot/imported/openbox.svg-da59b47cc26bacadaf477741c21c8e69.ctex"]
+source_file="res://Core/ABox/closedbox.svg"
+dest_files=["res://.godot/imported/closedbox.svg-b0efb6d423564bcbb2fb8571a9e8f561.ctex"]
 
 [params]
 
