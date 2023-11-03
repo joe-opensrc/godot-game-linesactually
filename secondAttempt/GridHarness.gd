@@ -19,6 +19,6 @@ func _ready():
 
 func _on_box_pressed(boxIndex):
   print("pressed boxIndex: " + str(boxIndex))
-  var tmpBox = $TheGrid.get_child(boxIndex)
+  var tmpBox = %TheGrid.get_child(boxIndex)
   tmpBox.set_flip_v(not tmpBox.is_flipped_v())
 
