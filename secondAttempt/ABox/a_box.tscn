@@ -14,6 +14,7 @@ texture = SubResource("ImageTexture_uxfdh")
 script = ExtResource("1_x7syx")
 
 [node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0.419608)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
