@@ -12,15 +12,12 @@ const aBox: PackedScene = preload("res://Core/ABox/a_box.tscn")
 
 
 func _init():
+
   totalNumOfCards = noOfRows * noOfCols
-  # there has to be a better way! :O
-  # this ain't Doom! :D
   minNumOfTextures = totalNumOfCards / float(memGroupSize)
   assert( fmod( minNumOfTextures, (totalNumOfCards / memGroupSize) ) == 0.0 )
-
-
-#  assert(memGroupSize > 1)
-#  assert(minNumTextures > 1 && minNumTextures != totalNumOfCards)
+  assert(memGroupSize > 1)
+  assert(minNumOfTextures > 1 && minNumOfTextures != totalNumOfCards)
 
 func _ready():
   pass
