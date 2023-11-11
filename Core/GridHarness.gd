@@ -20,7 +20,8 @@ func _ready():
   print(noOfRows, ", ", noOfCols)
   totalNumOfCards = noOfRows * noOfCols
   minNumOfTextures = totalNumOfCards / float(memGroupSize)
-  assert( fmod( minNumOfTextures, (totalNumOfCards / memGroupSize) ) == 0.0 )
+
+  assert( fmod( minNumOfTextures, (1.0*totalNumOfCards / memGroupSize) ) == 0.0 )
   assert(memGroupSize > 1)
   assert(minNumOfTextures > 1 && minNumOfTextures != totalNumOfCards)
 
