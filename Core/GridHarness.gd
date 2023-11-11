@@ -12,15 +12,17 @@ const aBox: PackedScene = preload("res://Core/ABox/a_box.tscn")
 
 
 func _init():
+  pass
 
+
+func _ready():
+
+  print(noOfRows, ", ", noOfCols)
   totalNumOfCards = noOfRows * noOfCols
   minNumOfTextures = totalNumOfCards / float(memGroupSize)
   assert( fmod( minNumOfTextures, (totalNumOfCards / memGroupSize) ) == 0.0 )
   assert(memGroupSize > 1)
   assert(minNumOfTextures > 1 && minNumOfTextures != totalNumOfCards)
-
-func _ready():
-  pass
 
   %TheGrid.set_columns(noOfCols)
 
