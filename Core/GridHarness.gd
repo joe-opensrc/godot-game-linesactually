@@ -6,6 +6,9 @@ extends Control
 var         totalNumOfCards: int
 var          minNumOfTextures: float
 
+@export var h_sep: int = 4
+@export var v_sep: int = 4
+
 const aBox: PackedScene = preload("res://Core/ABox/a_box.tscn")
 @export var   openBoxTexture: CompressedTexture2D = preload("res://Core/ABox/openbox.svg")
 @export var closedBoxTexture: CompressedTexture2D = preload("res://Core/ABox/closedbox.svg")
@@ -27,8 +30,15 @@ func _ready():
 
   %TheGrid.set_columns(noOfCols)
 
+  %TheGrid.add_theme_constant_override("h_separation",h_sep)
+  %TheGrid.add_theme_constant_override("v_separation",v_sep)
+
+  print( %TheGrid.get_theme_constant("h_separation") )
+  print( %TheGrid.get_theme_constant("v_separation") )
+
+  var anotherBox: Object
   for i in range(totalNumOfCards):
-    var anotherBox = aBox.instantiate()
+    anotherBox = aBox.instantiate()
     anotherBox.set_name("ABox" + str(i))
     anotherBox.set_texture(closedBoxTexture)
     anotherBox.get_node("Button").pressed.connect(_on_box_pressed.bind(i))
