@@ -30,7 +30,7 @@ func _ready():
   for i in range(totalNumOfCards):
     var anotherBox = aBox.instantiate()
     anotherBox.set_name("ABox" + str(i))
-    anotherBox.set_texture(openBoxTexture)
+    anotherBox.set_texture(closedBoxTexture)
     anotherBox.get_node("Button").pressed.connect(_on_box_pressed.bind(i))
     %TheGrid.add_child(anotherBox)
 
