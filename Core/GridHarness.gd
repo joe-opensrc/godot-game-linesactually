@@ -3,6 +3,12 @@ extends Control
 @export var        noOfCols: int = 2
 @export var        noOfRows: int = 2
 @export var    memGroupSize: int = 2
+
+const MIN_FLIP_DELAY_SEC: float = 0.1
+const MAX_FLIP_DELAY_SEC: float = 3.0
+
+@export_range(MIN_FLIP_DELAY_SEC,MAX_FLIP_DELAY_SEC) var flipDelaySec: float = 1.0
+
 var         totalNumOfCards: int
 var          minNumOfTextures: float
 
@@ -52,10 +58,8 @@ func _on_box_pressed(boxIndex):
 func _flipBox(boxIndex):
   var tmpBox = %TheGrid.get_child(boxIndex)
   tmpBox.set_texture(openBoxTexture)
-  get_tree().create_timer(1.0).timeout.connect(_on_flip_timeout.bind(tmpBox))
-#  tightly-coupled-version; not sure like use of `wait`
-#  await get_tree().create_timer(1.0).timeout
-#  tmpBox.set_texture(closedBoxTexture)
+  get_tree().create_timer(flipDelaySec).timeout.connect(_on_flip_timeout.bind(tmpBox))
+
 
 func _on_flip_timeout(tmpBox):
   tmpBox.set_texture(closedBoxTexture)
