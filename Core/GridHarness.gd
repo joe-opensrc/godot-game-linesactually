@@ -51,5 +51,12 @@ func _on_box_pressed(boxIndex):
 
 func _flipBox(boxIndex):
   var tmpBox = %TheGrid.get_child(boxIndex)
-  tmpBox.set_flip_v(not tmpBox.is_flipped_v())
+  tmpBox.set_texture(openBoxTexture)
+  get_tree().create_timer(1.0).timeout.connect(_on_flip_timeout.bind(tmpBox))
+#  tightly-coupled-version; not sure like use of `wait`
+#  await get_tree().create_timer(1.0).timeout
+#  tmpBox.set_texture(closedBoxTexture)
+
+func _on_flip_timeout(tmpBox):
+  tmpBox.set_texture(closedBoxTexture)
 
